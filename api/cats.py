@@ -8,7 +8,7 @@ async def get_cat():
     path = str(uuid.uuid4())
     if response.status_code == 200:
         with open("media/test.gif","wb") as f:
-            f.write(response.ocontent)
+            f.write(response.content)
         return f"media/test.gif"
     else:
         return None

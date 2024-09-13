@@ -27,7 +27,7 @@ async def cmd_start(message: types.Message):
     print(f"[!] Donloaded image {gif_path}")
     await bot.send_animation(
         message.chat.id, 
-        FSImputFile(gif_path), 
+        FSInputFile(gif_path), 
     )
     print("[!] Uploaded")
     delete_cat(gif_path)
